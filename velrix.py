@@ -29,7 +29,7 @@ SESSION = os.environ.get("VELRIX_SESSION", "").strip()
 TG_TOKEN = os.environ.get("TG_BOT_TOKEN", "").strip()
 TG_CHAT_ID = os.environ.get("TG_CHAT_ID", "").strip()
 
-IS_PROXY = os.environ.get("IS_PROXY", "false").lower() == "true"
+IS_PROXY = os.environ.get("IS_PROXY", "true").lower() == "true"
 PROXY_SERVER = os.environ.get("PROXY_SERVER", "").strip()
 REQUESTS_PROXIES = (
     {"http": PROXY_SERVER, "https": PROXY_SERVER}
